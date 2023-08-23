@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #b0c4de;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.mb-nav-links {
+    display: none;
+}
+
+.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 100px;
+}
+
+.desk-nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+@media screen and (max-width:767px) {
+    .desk-nav-links {
+        display: none;
+    }
+
+    .landing-logo {
+        height: 250px !important;
+        width: 250px !important;
+    }
+
+    .logo {
+        height: 50px !important;
+        width: 50px !important;
+
+    }
+
+    #link {
+        color: #615337 !important;
+    }
+
+    .mb-nav-links {
+        display: flex;
+        width: 250px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 100px !important;
+
+    }
+
+    .mb-nav-links :hover {
+        border: 0px !important;
+    }
+
+    .img-container {
+        order: 0 !important;
+    }
+
+    .landing-page {
+        background-image: linear-gradient(to top, #e6e8c8, #fff, #fff);
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .landing-content {
+        text-align: center;
+        width: 60% !important;
+    }
+
+    .content-heading {
+        font-family: "Bree Serif";
+        font-size: 26px !important;
+    }
+
+    .content-paragraph {
+        font-size: 14px !important;
+    }
+
+    .nav-flex {
+        padding: 0px 20px !important;
+    }
+
+    .transcribe-heading {
+        padding: 20px 0px !important;
+        text-align: center !important;
+    }
+
+    .trans-card {
+        height: 45vh;
+        width: 50vh;
+        background-color: #ccd2e6;
+        margin: 40px !important;
+        padding: 10px;
+        border-radius: 8px;
+        padding-top: 30px;
+    }
+
+    .footer-info {
+        margin-top: 20px !important;
+    }
+
+    .report-card {
+        background-color: #ccd2e6;
+        margin: 20px !important;
+        padding: 20px;
+        border-radius: 8px;
+        overflow-y: scroll;
+        max-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+
+    .width-for-dynamic-element {
+        width: 300px !important;
+    }
+
+    .width-for-dynamic-element>h6 {
+        width: 180px !important;
+    }
+
+    .width-for-dynamic-element>i {
+        width: 35px !important;
+    }
+
+    .width-for-dynamic-element>.time {
+        width: 85px !important;
+    }
+}
+
+.desk-nav-links li a {
+    color: #615337 !important;
+    text-decoration: none;
+
+}
+
+.link {
+    list-style-type: none;
+    margin: 10px 45px 0px 0px;
+    font-family: "Bree Serif";
+    font-size: 16px;
+    color: #615337;
+    cursor: pointer;
+}
+
+.link:hover {
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    transition: all .2s ease-in-out;
+}
+
+.landing-page {
+    height: 90vh;
+    background-image: linear-gradient(to top, #e6e8c8, #fff, #fff);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landing-content {
+    width: 60%;
+}
+
+.landing-logo {
+    height: 300px;
+    width: 300px;
+    border-top-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
+.content-heading {
+    font-family: "Bree Serif";
+}
+
+.content-paragraph {
+    font-family: "Playfair Display";
+}
+
+.technology-page {
+    height: 100vh;
+    background-image: linear-gradient(to top, #fff, #fff, #e6e8c8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+}
+
+.explore-btn {
+    color: black;
+    margin-top: 20px;
+    height: 20px;
+    width: auto;
+    background-color: cornflowerblue; 
+
+}
+
+.reports-page {
+    background-image: linear-gradient(to top, #e6e8c8, #fff);
+    padding: 10px;
+    height: 80vh;
+}
+.admin-page {
+    background-image: linear-gradient(to top, #e6e8c8, #fff);
+    padding: 10px;
+    height: 80vh;
+}
+.trans-card {
+    height: 55vh;
+    background-color: #ccd2e6;
+    margin: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 80vh;
+}
+
+.report-card {
+    background-color: #ccd2e6;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-y: scroll;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding-top: 15px;
+}
+
+#available-info {
+    font-family: "Bree Serif";
+}
+
+.width-for-dynamic-element {
+    width: 500px;
+}
+
+.width-for-dynamic-element>h6 {
+    width: 360px;
+}
+
+.width-for-dynamic-element>i {
+    width: 45px;
+}
+
+.width-for-dynamic-element>.time {
+    width: 95px;
+}
+
+.carousel-item {
+    background: cover;
+}
+
+.options {
+    display: block !important;
+}
+
+.normal {
+    display: none !important;
+}
+
+.dropdown {
+    height: 20vh;
+    background-color: #ffe4e1;
+}
+
+
